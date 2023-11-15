@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\UD7Ejercicios.props" />
+</Project>

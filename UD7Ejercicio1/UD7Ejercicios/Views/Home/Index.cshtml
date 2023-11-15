@@ -1,0 +1,16 @@
+﻿@model UD7Ejercicios.Models.Entities.clsPersona
+
+@{
+    ViewData["Title"] = "Home Page";
+    DateTime fechaHoraActual = DateTime.Now;
+}
+
+<p>@ViewData["Saludo"]</p>
+
+<p>@ViewBag.fechaHoraActual</p>
+
+<p>Nombre: @Model.Nombre</p>
+<p>Apellidos: @Model.Apellido</p>
+
+@Html.ActionLink("Listado de personas", "listadoPersonas", "Home")
+@Html.ActionLink("Editar una persona", "EditarPersona", "Home")

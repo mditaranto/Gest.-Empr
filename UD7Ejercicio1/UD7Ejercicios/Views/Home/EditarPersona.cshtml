@@ -1,0 +1,42 @@
+﻿@using UD7Ejercicios.Models.Entities;
+<!-- EditarPersona.cshtml -->
+@model UD7Ejercicios.Models.ViewModel.clsEditarVM
+
+@{
+    ViewData["Title"] = "Editar Persona";
+}
+
+<h1>Editar Persona</h1>
+
+@using (Html.BeginForm("GuardarPersona", "Home", FormMethod.Post))
+{
+    @Html.HiddenFor(model => model.Id)
+    <input type="hidden" name="Id" value="@Model.Id"/>
+
+    <label for="Nombre">Nombre:</label>
+    @Html.TextBoxFor(model => model.Nombre)
+    <br />
+
+    <label for="Apellido">Apellido:</label>
+    @Html.TextBoxFor(model => model.Apellido)
+    <br />
+
+    <label for="IdDepartamento">Departamento:</label>
+    <select name="IdDepartamento">
+        @foreach (clsDepartamento departamento in Model.listadoDepartamentosVM)
+        {
+            if (Model.IdDepartamento == departamento.idDepartamento)
+            {
+                <option selected= value=@departamento.idDepartamento>@departamento.nombreDepartamento</option>
+
+            } else
+            {
+                <option value=@departamento.idDepartamento>@departamento.nombreDepartamento</option>
+            }
+        }
+    </select>
+
+    <button type="submit">Guardar</button>
+}
+
+@Html.ActionLink("Volver a Index", "Index", "Home")

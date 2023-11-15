@@ -1,0 +1,25 @@
+﻿@using UD7Ejercicios.Models.Entities;
+
+@model List<UD7Ejercicios.Models.Entities.clsPersona>
+
+    <table>
+        <thead>
+            <tr>
+                <th> Nombre :</th>
+                <th> Apellidos :</th>
+            </tr>
+        </thead>
+
+    @{
+        foreach (clsPersona persona in Model)
+        {
+            <tr>
+                <td>@persona.Nombre</td>
+                <td>@persona.Apellido</td>
+            </tr>    
+        } 
+    }
+
+    </table>
+
+@Html.ActionLink("Volver a Index", "Index", "Home")
