@@ -1,0 +1,28 @@
+﻿@model Tema8.Models.ClsPersona
+
+@{
+    ViewData["Title"] = "Editar Persona";
+}
+
+<h1>Editar Persona</h1>
+
+@using (Html.BeginForm("GuardarPersona", "Home", FormMethod.Post))
+{
+    @Html.HiddenFor(model => model.Id)
+    <input type="hidden" name="Id" value="@Model.Id" />
+
+    @Html.HiddenFor(model => model.IdDept)
+    <input type="hidden" name="IdDept" value="@Model.IdDept" />
+
+    <label for="Nombre">Nombre:</label>
+    @Html.TextBoxFor(model => model.Nombre)
+    <br />
+
+    <label for="Apellido">Apellido:</label>
+    @Html.TextBoxFor(model => model.Apellidos)
+    <br />
+
+    <button type="submit" action="GuardarPersona">Guardar</button>
+}
+
+@Html.ActionLink("Volver a Index", "Index", "Home")
