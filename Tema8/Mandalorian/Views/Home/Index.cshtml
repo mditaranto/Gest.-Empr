@@ -1,8 +1,18 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@model Mandalorian.Models.ViewModels.ListaMisiones
+
+@{
+    ViewData["Title"] = "Misiones";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<h1>Misiones</h1>
+
+@using (Html.BeginForm("Detalles", "Home", FormMethod.Post))
+{
+    <select name="Misiones">
+    @foreach (Misiones mision in Model.getListaMisiones())
+    {
+        <option>@mision.Titulo</option>
+    }
+    </select>
+    <button type="submit" action="GuardarPersona">Guardar</button>
+}

@@ -15,12 +15,13 @@ namespace Mandalorian.Controllers
 
         public IActionResult Index()
         {
+            List<Misiones> listaMisiones = new List<Misiones>();
             return View();
         }
-
-        public IActionResult Privacy()
+        [HttpPost]
+        public IActionResult Detalles(Misiones mision)
         {
-            return View();
+            return View(mision);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
