@@ -18,12 +18,12 @@ namespace Mandalorian.Controllers
         }
 
         /// <summary>
-        /// Recoge el id de la mision seleccionada y devuelve la vista detalles con la mision elegida
+        /// Recoge el id de la mision seleccionada y devuelve la vista Index con la mision elegida
         /// </summary>
         /// <param name="mision"></param>
         /// <returns></returns>
         [HttpPost]
-        public IActionResult Detalles(Misiones mision)
+        public IActionResult Index(Misiones mision)
         {
             Misiones misionElegida = ListaMisiones.getListaMisiones().Find(x => x.Id == mision.Id);
             return View(misionElegida);

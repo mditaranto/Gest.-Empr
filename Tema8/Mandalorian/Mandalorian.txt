@@ -2,6 +2,7 @@
 	Conexion
 		//Clase que dara la opcion de crear y cerrar la coneccion con la base de datos
 	ListaMisiones
+	//Tendra una un una funcion que devuelva una lista de misiones
 		List<Misiones> getListaMisiones()
 
 
@@ -12,20 +13,19 @@ UI
 				titulo
 				descripcion
 				recompensa
-			//Clase de una mision
+			//Sera la clase que se usara para almacenar los datos de las misiones
 
 	Controllers
 		Home
 			Index()
 				return View()
-				//Recoge la mision seleccionada y la envia a Detalles
+				//Muestra una lista de misiones y envia el id de la seleccionada 
 
 			[HttpPost]
-			Detalles()
+			Index(Misiones mision)
 				return View()
+				//Segun el id de la mision seleccionada, mostrara los detalles de la mision
 	Views
 		Home
 			Index
-				//Tendra un boton hacia Detalles
-			Detalles
-				//Mostrara los detalles de la mision seleccionada
+				Mostrara una lista de misiones y al enviarla se mostrala los datos de la misma
