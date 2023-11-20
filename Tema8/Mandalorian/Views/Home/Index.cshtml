@@ -7,23 +7,29 @@
 
 <h1>Misiones</h1>
 
-@if (Model==null)
-{
+
     <p>Seleccione una mision</p>
     @using (Html.BeginForm("Index", "Home", FormMethod.Post))
     {
         <select name="Id">
+
             @foreach (Misiones mision in ListaMisiones.getListaMisiones())
             {
+            @if (Model != null && Model.Id == mision.Id)
+            {
+                <option selected value="@Model.Id">@Model.Titulo</option>
+            } else {
                 <option value="@mision.Id">@mision.Titulo</option>
             }
+            }
+            
         </select>
         <button type="submit" action="Index">Ver detalles</button>
     }
-} else
+
+@if (Model != null)
 {
     <h2>@Model.Titulo</h2>
     <h4>@Model.Recompensa</h4>
     <p>@Model.Descripcion</p>
-    @Html.ActionLink("Seleccionar otra mision", "Index", "Home")
 }
