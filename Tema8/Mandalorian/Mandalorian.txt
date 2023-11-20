@@ -1,29 +1,25 @@
 ﻿DAL
 	Conexion
 		//Clase que dara la opcion de crear y cerrar la coneccion con la base de datos
-	ListadosDAL
-		List<clsMisiones> ObtenerListadoCompletoMisionesDAL()
+	ListaMisiones
+		List<Misiones> getListaMisiones()
 
-BL
-	ListadosBL
-		List<clsMisiones> ObtenerListadoCompletoMisionesBL()
-
-Entidades
-	clsMisiones
-			id
-			titulo
-			descripcion
-			recompensa
 
 UI
 	Model
-		ViewModels
-			ListaMisiones
-				//Tiene una lista de misiones
+		Misiones.cs
+				id
+				titulo
+				descripcion
+				recompensa
+			//Clase de una mision
+
 	Controllers
 		Home
 			Index()
 				return View()
+				//Recoge la mision seleccionada y la envia a Detalles
+
 			[HttpPost]
 			Detalles()
 				return View()

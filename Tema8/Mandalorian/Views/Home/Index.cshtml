@@ -1,4 +1,4 @@
-﻿@model Mandalorian.Models.ViewModels.ListaMisiones
+﻿@using Mandalorian.DAL;
 
 @{
     ViewData["Title"] = "Misiones";
@@ -8,11 +8,11 @@
 
 @using (Html.BeginForm("Detalles", "Home", FormMethod.Post))
 {
-    <select name="Misiones">
-    @foreach (Misiones mision in Model.getListaMisiones())
-    {
-        <option>@mision.Titulo</option>
+    <select name="Id">
+        @foreach (Misiones mision in ListaMisiones.getListaMisiones())
+        {
+        <option value="@mision.Id">@mision.Titulo</option>
     }
     </select>
-    <button type="submit" action="GuardarPersona">Guardar</button>
+    <button type="submit" action="Detalles">Ver detalles</button>
 }
