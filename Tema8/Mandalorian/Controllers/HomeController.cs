@@ -1,5 +1,6 @@
 ﻿using Mandalorian.DAL;
 using Mandalorian.Models;
+using Mandalorian.Models.ViewModel;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -13,8 +14,8 @@ namespace Mandalorian.Controllers
         /// <returns></returns>
         public IActionResult Index()
         {
-
-            return View();
+            ListaMisionesConMision listaMisiones = new ListaMisionesConMision();
+            return View(listaMisiones);
         }
 
         /// <summary>
@@ -25,8 +26,9 @@ namespace Mandalorian.Controllers
         [HttpPost]
         public IActionResult Index(Misiones mision)
         {
-            Misiones misionElegida = ListaMisiones.getListaMisiones().Find(x => x.Id == mision.Id);
-            return View(misionElegida);
+            ListaMisionesConMision listaMisiones = new ListaMisionesConMision();
+            listaMisiones.MisionElegida = listaMisiones.ListaDeMisiones.Find(x => x.Id == mision.Id);
+            return View(listaMisiones);
         }
 
     }

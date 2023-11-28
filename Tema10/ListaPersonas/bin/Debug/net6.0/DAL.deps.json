@@ -6,13 +6,13 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "DAl/1.0.0": {
+      "DAL/1.0.0": {
         "dependencies": {
           "Entidades": "1.0.0",
           "Microsoft.Data.SqlClient": "5.1.2"
         },
         "runtime": {
-          "DAl.dll": {}
+          "DAL.dll": {}
         }
       },
       "Azure.Core/1.25.0": {
@@ -416,7 +416,7 @@
     }
   },
   "libraries": {
-    "DAl/1.0.0": {
+    "DAL/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

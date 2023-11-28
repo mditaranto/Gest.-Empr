@@ -28,3 +28,33 @@ C:\Users\mditaranto\Desktop\Curso\Gest. Emp\Tema8\Mandalorian\obj\Debug\net6.0\r
 C:\Users\mditaranto\Desktop\Curso\Gest. Emp\Tema8\Mandalorian\obj\Debug\net6.0\Mandalorian.pdb
 C:\Users\mditaranto\Desktop\Curso\Gest. Emp\Tema8\Mandalorian\obj\Debug\net6.0\Mandalorian.genruntimeconfig.cache
 C:\Users\mditaranto\Desktop\Curso\Gest. Emp\Tema8\Mandalorian\obj\Debug\net6.0\ref\Mandalorian.dll
+E:\DAM\Gest.-Empr\Tema8\Mandalorian\bin\Debug\net6.0\appsettings.Development.json
+E:\DAM\Gest.-Empr\Tema8\Mandalorian\bin\Debug\net6.0\appsettings.json
+E:\DAM\Gest.-Empr\Tema8\Mandalorian\bin\Debug\net6.0\Mandalorian.staticwebassets.runtime.json
+E:\DAM\Gest.-Empr\Tema8\Mandalorian\bin\Debug\net6.0\Mandalorian.exe
+E:\DAM\Gest.-Empr\Tema8\Mandalorian\bin\Debug\net6.0\Mandalorian.deps.json
+E:\DAM\Gest.-Empr\Tema8\Mandalorian\bin\Debug\net6.0\Mandalorian.runtimeconfig.json
+E:\DAM\Gest.-Empr\Tema8\Mandalorian\bin\Debug\net6.0\Mandalorian.dll
+E:\DAM\Gest.-Empr\Tema8\Mandalorian\bin\Debug\net6.0\Mandalorian.pdb
+E:\DAM\Gest.-Empr\Tema8\Mandalorian\obj\Debug\net6.0\Mandalorian.GeneratedMSBuildEditorConfig.editorconfig
+E:\DAM\Gest.-Empr\Tema8\Mandalorian\obj\Debug\net6.0\Mandalorian.AssemblyInfoInputs.cache
+E:\DAM\Gest.-Empr\Tema8\Mandalorian\obj\Debug\net6.0\Mandalorian.AssemblyInfo.cs
+E:\DAM\Gest.-Empr\Tema8\Mandalorian\obj\Debug\net6.0\Mandalorian.csproj.CoreCompileInputs.cache
+E:\DAM\Gest.-Empr\Tema8\Mandalorian\obj\Debug\net6.0\Mandalorian.MvcApplicationPartsAssemblyInfo.cache
+E:\DAM\Gest.-Empr\Tema8\Mandalorian\obj\Debug\net6.0\Mandalorian.RazorAssemblyInfo.cache
+E:\DAM\Gest.-Empr\Tema8\Mandalorian\obj\Debug\net6.0\Mandalorian.RazorAssemblyInfo.cs
+E:\DAM\Gest.-Empr\Tema8\Mandalorian\obj\Debug\net6.0\staticwebassets\msbuild.Mandalorian.Microsoft.AspNetCore.StaticWebAssets.props
+E:\DAM\Gest.-Empr\Tema8\Mandalorian\obj\Debug\net6.0\staticwebassets\msbuild.build.Mandalorian.props
+E:\DAM\Gest.-Empr\Tema8\Mandalorian\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Mandalorian.props
+E:\DAM\Gest.-Empr\Tema8\Mandalorian\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Mandalorian.props
+E:\DAM\Gest.-Empr\Tema8\Mandalorian\obj\Debug\net6.0\staticwebassets.pack.json
+E:\DAM\Gest.-Empr\Tema8\Mandalorian\obj\Debug\net6.0\staticwebassets.build.json
+E:\DAM\Gest.-Empr\Tema8\Mandalorian\obj\Debug\net6.0\staticwebassets.development.json
+E:\DAM\Gest.-Empr\Tema8\Mandalorian\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+E:\DAM\Gest.-Empr\Tema8\Mandalorian\obj\Debug\net6.0\scopedcss\bundle\Mandalorian.styles.css
+E:\DAM\Gest.-Empr\Tema8\Mandalorian\obj\Debug\net6.0\scopedcss\projectbundle\Mandalorian.bundle.scp.css
+E:\DAM\Gest.-Empr\Tema8\Mandalorian\obj\Debug\net6.0\Mandalorian.dll
+E:\DAM\Gest.-Empr\Tema8\Mandalorian\obj\Debug\net6.0\refint\Mandalorian.dll
+E:\DAM\Gest.-Empr\Tema8\Mandalorian\obj\Debug\net6.0\Mandalorian.pdb
+E:\DAM\Gest.-Empr\Tema8\Mandalorian\obj\Debug\net6.0\Mandalorian.genruntimeconfig.cache
+E:\DAM\Gest.-Empr\Tema8\Mandalorian\obj\Debug\net6.0\ref\Mandalorian.dll

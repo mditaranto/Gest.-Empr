@@ -21,10 +21,10 @@ namespace DAL
         public Conexion()
         {
 
-            this.server = "107-08\\SQLEXPRESS.database.windows.net";
-            this.dataBase = "Persona";
+            this.server = "mati.database.windows.net";
+            this.dataBase = "MatiBBDD";
             this.user = "prueba";
-            this.pass = "123";
+            this.pass = "fernandoG321";
 
         }
         //Con parámetros por si quisiera cambiar las conexiones
@@ -95,4 +95,4 @@ namespace DAL
 
     }
 }
-}
+

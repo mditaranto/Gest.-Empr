@@ -13,9 +13,9 @@
     {
         <select name="Id">
 
-            @foreach (Misiones mision in ListaMisiones.getListaMisiones())
+            @foreach (Misiones mision in Model.ListaDeMisiones)
             {
-            @if (Model != null && Model.Id == mision.Id)
+            @if (Model.Id != 0 && Model.Id == mision.Id)
             {
                 <option selected value="@Model.Id">@Model.Titulo</option>
             } else {
@@ -27,9 +27,9 @@
         <button type="submit" action="Index">Ver detalles</button>
     }
 
-@if (Model != null)
+@if (Model != null && Model.Id != 0)
 {
-    <h2>@Model.Titulo</h2>
-    <h4>@Model.Recompensa</h4>
-    <p>@Model.Descripcion</p>
+    <h2>@Model.MisionElegida.Titulo</h2>
+    <h4>Recompensa: @Model.MisionElegida.Recompensa</h4>
+    <p>@Model.MisionElegida.Descripcion</p>
 }
