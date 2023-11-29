@@ -57,6 +57,8 @@ namespace DAL
 
                         { oPersona.FechaNacimiento = (DateTime)miLector["FechaNacimiento"]; }
 
+                        oPersona.Telefono = (string)miLector["Telefono"];
+
                         oPersona.Direccion = (string)miLector["Direccion"];
 
                         oPersona.Telefono = (string)miLector["Telefono"];
@@ -113,6 +115,8 @@ namespace DAL
 
                     if (miLector["FechaNacimiento"] != System.DBNull.Value)
                     { oPersona.FechaNacimiento = (DateTime)miLector["FechaNacimiento"]; }
+
+                    oPersona.Telefono = (string)miLector["Telefono"];
 
                     oPersona.Direccion = (string)miLector["Direccion"];
                     oPersona.Telefono = (string)miLector["Telefono"];

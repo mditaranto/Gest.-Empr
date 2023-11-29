@@ -17,14 +17,6 @@ namespace DAL.Manejadoras
 
             SqlCommand miComando = new SqlCommand();
 
-            miComando.Parameters.Add("@id", System.Data.SqlDbType.Int).Value = persona.Id;
-            miComando.Parameters.Add("@Nombre", System.Data.SqlDbType.VarChar).Value = persona.Nombre;
-            miComando.Parameters.Add("@Apellido", System.Data.SqlDbType.VarChar).Value = persona.Apellido;
-            miComando.Parameters.Add("@FechaNacimiento", System.Data.SqlDbType.Date).Value = persona.FechaNacimiento;
-            miComando.Parameters.Add("@Direccion", System.Data.SqlDbType.VarChar).Value = persona.Direccion;
-            miComando.Parameters.Add("@Telefono", System.Data.SqlDbType.VarChar).Value = persona.Telefono;
-            miComando.Parameters.Add("@Foto", System.Data.SqlDbType.VarChar).Value = persona.Foto;
-            miComando.Parameters.Add("@IdDepartamento", System.Data.SqlDbType.Int).Value = persona.IdDepartamento;
 
             try
 
@@ -35,7 +27,15 @@ namespace DAL.Manejadoras
 
                 miComando.CommandText = "UPDATE Personas " +
                     "SET Nombre = @Nombre, apellidos = @Apellido, Telefono = @Telefono, Direccion = @Direccion, Foto = @Foto, FechaNacimiento = @FechaNacimiento, IDDepartamento = @IdDepartamento " +
-                    "WHERE IDPersona=@id";
+                    "WHERE ID=@id";
+                miComando.Parameters.Add("@id", System.Data.SqlDbType.Int).Value = persona.Id;
+                miComando.Parameters.Add("@Nombre", System.Data.SqlDbType.VarChar).Value = persona.Nombre;
+                miComando.Parameters.Add("@Apellido", System.Data.SqlDbType.VarChar).Value = persona.Apellido;
+                miComando.Parameters.Add("@FechaNacimiento", System.Data.SqlDbType.Date).Value = persona.FechaNacimiento;
+                miComando.Parameters.Add("@Direccion", System.Data.SqlDbType.VarChar).Value = persona.Direccion;
+                miComando.Parameters.Add("@Telefono", System.Data.SqlDbType.VarChar).Value = persona.Telefono;
+                miComando.Parameters.Add("@Foto", System.Data.SqlDbType.VarChar).Value = persona.Foto;
+                miComando.Parameters.Add("@IdDepartamento", System.Data.SqlDbType.Int).Value = persona.IdDepartamento;
 
                 miComando.Connection = conection;
                 numeroFilasAfectadas = miComando.ExecuteNonQuery();

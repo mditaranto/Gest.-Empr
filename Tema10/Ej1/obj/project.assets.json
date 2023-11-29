@@ -3592,6 +3592,21 @@
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
       },
+      "BL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "DAL": "1.0.0",
+          "Entidades": "1.0.0",
+          "Microsoft.Data.SqlClient": "5.1.2"
+        },
+        "compile": {
+          "bin/placeholder/BL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BL.dll": {}
+        }
+      },
       "DAL/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -10395,6 +10410,11 @@
         "system.xml.xdocument.nuspec"
       ]
     },
+    "BL/1.0.0": {
+      "type": "project",
+      "path": "../BL/BL.csproj",
+      "msbuildProject": "../BL/BL.csproj"
+    },
     "DAL/1.0.0": {
       "type": "project",
       "path": "../ListaPersonas/DAL.csproj",
@@ -10408,6 +10428,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "BL >= 1.0.0",
       "DAL >= 1.0.0",
       "Entidades >= 1.0.0",
       "Microsoft.Data.SqlClient >= 5.1.2",
@@ -10415,23 +10436,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Usuario\\.nuget\\packages\\": {},
-    "E:\\VisualStudio\\NuGetPackages": {}
+    "C:\\Users\\mditaranto\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\DAM\\Gest.-Empr\\Tema10\\Ej1\\Ej1.csproj",
+      "projectUniqueName": "C:\\Users\\mditaranto\\Desktop\\Curso\\Gest. Emp\\Tema10\\Ej1\\Ej1.csproj",
       "projectName": "Ej1",
-      "projectPath": "E:\\DAM\\Gest.-Empr\\Tema10\\Ej1\\Ej1.csproj",
-      "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "E:\\DAM\\Gest.-Empr\\Tema10\\Ej1\\obj\\",
+      "projectPath": "C:\\Users\\mditaranto\\Desktop\\Curso\\Gest. Emp\\Tema10\\Ej1\\Ej1.csproj",
+      "packagesPath": "C:\\Users\\mditaranto\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\mditaranto\\Desktop\\Curso\\Gest. Emp\\Tema10\\Ej1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "E:\\VisualStudio\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\mditaranto\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -10447,11 +10468,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "E:\\DAM\\Gest.-Empr\\Tema10\\Entidades\\Entidades.csproj": {
-              "projectPath": "E:\\DAM\\Gest.-Empr\\Tema10\\Entidades\\Entidades.csproj"
+            "C:\\Users\\mditaranto\\Desktop\\Curso\\Gest. Emp\\Tema10\\BL\\BL.csproj": {
+              "projectPath": "C:\\Users\\mditaranto\\Desktop\\Curso\\Gest. Emp\\Tema10\\BL\\BL.csproj"
             },
-            "E:\\DAM\\Gest.-Empr\\Tema10\\ListaPersonas\\DAL.csproj": {
-              "projectPath": "E:\\DAM\\Gest.-Empr\\Tema10\\ListaPersonas\\DAL.csproj"
+            "C:\\Users\\mditaranto\\Desktop\\Curso\\Gest. Emp\\Tema10\\Entidades\\Entidades.csproj": {
+              "projectPath": "C:\\Users\\mditaranto\\Desktop\\Curso\\Gest. Emp\\Tema10\\Entidades\\Entidades.csproj"
+            },
+            "C:\\Users\\mditaranto\\Desktop\\Curso\\Gest. Emp\\Tema10\\ListaPersonas\\DAL.csproj": {
+              "projectPath": "C:\\Users\\mditaranto\\Desktop\\Curso\\Gest. Emp\\Tema10\\ListaPersonas\\DAL.csproj"
             }
           }
         }
@@ -10494,7 +10518,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

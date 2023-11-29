@@ -500,3 +500,5 @@ E:\DAM\Gest.-Empr\Tema10\Ej1\obj\Debug\net6.0\scopedcss\projectbundle\Ej1.bundle
 E:\DAM\Gest.-Empr\Tema10\Ej1\obj\Debug\net6.0\Ej1.csproj.CopyComplete
 E:\DAM\Gest.-Empr\Tema10\Ej1\obj\Debug\net6.0\Ej1.genruntimeconfig.cache
 E:\DAM\Gest.-Empr\Tema10\Ej1\obj\Debug\net6.0\ref\Ej1.dll
+C:\Users\mditaranto\Desktop\Curso\Gest. Emp\Tema10\Ej1\bin\Debug\net6.0\BL.dll
+C:\Users\mditaranto\Desktop\Curso\Gest. Emp\Tema10\Ej1\bin\Debug\net6.0\BL.pdb

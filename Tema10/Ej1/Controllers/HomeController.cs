@@ -5,6 +5,7 @@ using Microsoft.Data.SqlClient;
 using DAL;
 using Entidades;
 using DAL.Manejadoras;
+using BL;
 
 namespace Ej1.Controllers
 {
@@ -35,7 +36,7 @@ namespace Ej1.Controllers
         {
             try
             {
-                return View(ListaPersonas.ListadoCompletoPersonas());
+                return View(ListadoPersonasBl.ListadoCompletoPersonasBL());
             } catch(Exception e)
             {
                 return View("Error");
@@ -54,14 +55,29 @@ namespace Ej1.Controllers
                 return View("Error");
             }
         }
-
+        [ActionName("Delete")]
         [HttpPost]
-        public ActionResult Delete(ClsPersona persona)
+        public ActionResult DeletePost(int id)
         {
             try
             {
-                BorrarPersona.Borrar(persona.Id);
-                return RedirectToAction("Listado");
+                int numeroFilasAfectadas =
+                HandlerPersonaBL.BorrarPersonaBL(id);
+                if (numeroFilasAfectadas == 0)
+                {
+                    ViewBag.Info = "No existe esa persona";
+                }
+                else if (numeroFilasAfectadas == -1)
+                {
+                    ViewBag.Info = "Los martes no esta permitido borrar personas";
+                }
+                else
+                {
+                    ViewBag.Info = "Persona borrada correctamente";
+                    return RedirectToAction("Listado");
+                }
+
+                return View(ListaPersonas.FindByID(id));
             } catch (Exception e)
             {
                 return View("Error");

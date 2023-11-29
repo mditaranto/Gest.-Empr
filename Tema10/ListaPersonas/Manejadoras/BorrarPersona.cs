@@ -26,7 +26,7 @@ namespace DAL.Manejadoras
                 Conexion miConexion = new Conexion();
                 SqlConnection conection = miConexion.getConnection();
 
-                miComando.CommandText = "DELETE FROM Personas WHERE IDPersona=@id";
+                miComando.CommandText = "DELETE FROM Personas WHERE ID=@id";
 
                 miComando.Connection = conection;
                 numeroFilasAfectadas = miComando.ExecuteNonQuery();
