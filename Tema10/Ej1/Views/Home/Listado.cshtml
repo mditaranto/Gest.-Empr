@@ -7,7 +7,7 @@
 <h1>Listado</h1>
 <h1>@ViewBag.Info</h1>
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create" >Create New</a>
 </p>
 <table class="table">
     <thead>
@@ -43,7 +43,7 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.Id)
+                <input type="hidden" value="@item.Id">
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Nombre)
@@ -58,7 +58,7 @@
                 @Html.DisplayFor(modelItem => item.Telefono)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Foto)
+                <img src="@item.Foto" width="60" height="60"/>
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.FechaNacimiento)
@@ -69,7 +69,7 @@
             <td>
                 @Html.ActionLink("Edit", "Edit", new { item.Id }) |
                 @Html.ActionLink("Details", "Details", new { item.Id }) |
-                    @Html.ActionLink("Delete", "Delete", new { item.Id })
+                @Html.ActionLink("Delete", "Delete", new { item.Id })
             </td>
         </tr>
 }

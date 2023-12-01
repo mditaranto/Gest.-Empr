@@ -8,6 +8,10 @@ namespace DAL
 
         private static Conexion miConexion = new Conexion();
 
+        /// <summary>
+        /// Funcion que devuelve un listado de personas obtenido de la base de datos
+        /// </summary>
+        /// <returns>Lista de personas</returns>
         public static List<ClsPersona> ListadoCompletoPersonas()
         {
 
@@ -59,9 +63,11 @@ namespace DAL
 
                         oPersona.Telefono = (string)miLector["Telefono"];
 
+                        oPersona.Foto = (string)miLector["Foto"];
+
                         oPersona.Direccion = (string)miLector["Direccion"];
 
-                        oPersona.Telefono = (string)miLector["Telefono"];
+                        oPersona.IdDepartamento = (int)miLector["IdDepartamento"];
 
                         listadoPersonas.Add(oPersona);
 
@@ -86,6 +92,11 @@ namespace DAL
             return listadoPersonas;
         }
 
+        /// <summary>
+        /// Funcion que devuelve una persona obtenida de la base de datos por id
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns>persona filtrada por id</returns>
         public static ClsPersona FindByID(int id)
         {
             SqlConnection conexionConBDD = miConexion.getConnection();
@@ -107,19 +118,28 @@ namespace DAL
                 {
                     miLector.Read();
 
+
                     oPersona = new ClsPersona();
 
                     oPersona.Id = (int)miLector["ID"];
+
                     oPersona.Nombre = (string)miLector["Nombre"];
+
                     oPersona.Apellido = (string)miLector["Apellidos"];
 
+                    //Si sospechamos que el campo puede ser Null en la BBDD
+
                     if (miLector["FechaNacimiento"] != System.DBNull.Value)
+
                     { oPersona.FechaNacimiento = (DateTime)miLector["FechaNacimiento"]; }
 
                     oPersona.Telefono = (string)miLector["Telefono"];
 
+                    oPersona.Foto = (string)miLector["Foto"];
+
                     oPersona.Direccion = (string)miLector["Direccion"];
-                    oPersona.Telefono = (string)miLector["Telefono"];
+
+                    oPersona.IdDepartamento = (int)miLector["IdDepartamento"];
 
                     miLector.Close();
                     conexionConBDD.Close();

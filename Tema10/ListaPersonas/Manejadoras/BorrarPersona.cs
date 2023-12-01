@@ -10,7 +10,11 @@ namespace DAL.Manejadoras
 {
     public class BorrarPersona
     {
-
+        /// <summary>
+        /// Funcion que borra una persona de la base de datos por id y devuelve el numero de filas afectadas
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns>Numero de filas afectadas</returns>
         public static int Borrar(int id)
         {
             int numeroFilasAfectadas = 0;

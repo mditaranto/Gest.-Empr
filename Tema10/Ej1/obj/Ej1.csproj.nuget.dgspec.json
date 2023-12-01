@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "E:\\DAM\\Gest.-Empr\\Tema10\\Ej1\\Ej1.csproj": {}
+    "C:\\Users\\mditaranto\\Desktop\\Curso\\Gest. Emp\\Tema10\\Ej1\\Ej1.csproj": {}
   },
   "projects": {
-    "E:\\DAM\\Gest.-Empr\\Tema10\\BL\\BL.csproj": {
+    "C:\\Users\\mditaranto\\Desktop\\Curso\\Gest. Emp\\Tema10\\BL\\BL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\DAM\\Gest.-Empr\\Tema10\\BL\\BL.csproj",
+        "projectUniqueName": "C:\\Users\\mditaranto\\Desktop\\Curso\\Gest. Emp\\Tema10\\BL\\BL.csproj",
         "projectName": "BL",
-        "projectPath": "E:\\DAM\\Gest.-Empr\\Tema10\\BL\\BL.csproj",
-        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "E:\\DAM\\Gest.-Empr\\Tema10\\BL\\obj\\",
+        "projectPath": "C:\\Users\\mditaranto\\Desktop\\Curso\\Gest. Emp\\Tema10\\BL\\BL.csproj",
+        "packagesPath": "C:\\Users\\mditaranto\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mditaranto\\Desktop\\Curso\\Gest. Emp\\Tema10\\BL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "E:\\VisualStudio\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mditaranto\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -33,11 +33,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "E:\\DAM\\Gest.-Empr\\Tema10\\Entidades\\Entidades.csproj": {
-                "projectPath": "E:\\DAM\\Gest.-Empr\\Tema10\\Entidades\\Entidades.csproj"
+              "C:\\Users\\mditaranto\\Desktop\\Curso\\Gest. Emp\\Tema10\\Entidades\\Entidades.csproj": {
+                "projectPath": "C:\\Users\\mditaranto\\Desktop\\Curso\\Gest. Emp\\Tema10\\Entidades\\Entidades.csproj"
               },
-              "E:\\DAM\\Gest.-Empr\\Tema10\\ListaPersonas\\DAL.csproj": {
-                "projectPath": "E:\\DAM\\Gest.-Empr\\Tema10\\ListaPersonas\\DAL.csproj"
+              "C:\\Users\\mditaranto\\Desktop\\Curso\\Gest. Emp\\Tema10\\ListaPersonas\\DAL.csproj": {
+                "projectPath": "C:\\Users\\mditaranto\\Desktop\\Curso\\Gest. Emp\\Tema10\\ListaPersonas\\DAL.csproj"
               }
             }
           }
@@ -73,24 +73,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\DAM\\Gest.-Empr\\Tema10\\Ej1\\Ej1.csproj": {
+    "C:\\Users\\mditaranto\\Desktop\\Curso\\Gest. Emp\\Tema10\\Ej1\\Ej1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\DAM\\Gest.-Empr\\Tema10\\Ej1\\Ej1.csproj",
+        "projectUniqueName": "C:\\Users\\mditaranto\\Desktop\\Curso\\Gest. Emp\\Tema10\\Ej1\\Ej1.csproj",
         "projectName": "Ej1",
-        "projectPath": "E:\\DAM\\Gest.-Empr\\Tema10\\Ej1\\Ej1.csproj",
-        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "E:\\DAM\\Gest.-Empr\\Tema10\\Ej1\\obj\\",
+        "projectPath": "C:\\Users\\mditaranto\\Desktop\\Curso\\Gest. Emp\\Tema10\\Ej1\\Ej1.csproj",
+        "packagesPath": "C:\\Users\\mditaranto\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mditaranto\\Desktop\\Curso\\Gest. Emp\\Tema10\\Ej1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "E:\\VisualStudio\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mditaranto\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -106,14 +106,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "E:\\DAM\\Gest.-Empr\\Tema10\\BL\\BL.csproj": {
-                "projectPath": "E:\\DAM\\Gest.-Empr\\Tema10\\BL\\BL.csproj"
+              "C:\\Users\\mditaranto\\Desktop\\Curso\\Gest. Emp\\Tema10\\BL\\BL.csproj": {
+                "projectPath": "C:\\Users\\mditaranto\\Desktop\\Curso\\Gest. Emp\\Tema10\\BL\\BL.csproj"
               },
-              "E:\\DAM\\Gest.-Empr\\Tema10\\Entidades\\Entidades.csproj": {
-                "projectPath": "E:\\DAM\\Gest.-Empr\\Tema10\\Entidades\\Entidades.csproj"
-              },
-              "E:\\DAM\\Gest.-Empr\\Tema10\\ListaPersonas\\DAL.csproj": {
-                "projectPath": "E:\\DAM\\Gest.-Empr\\Tema10\\ListaPersonas\\DAL.csproj"
+              "C:\\Users\\mditaranto\\Desktop\\Curso\\Gest. Emp\\Tema10\\Entidades\\Entidades.csproj": {
+                "projectPath": "C:\\Users\\mditaranto\\Desktop\\Curso\\Gest. Emp\\Tema10\\Entidades\\Entidades.csproj"
               }
             }
           }
@@ -156,24 +153,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\DAM\\Gest.-Empr\\Tema10\\Entidades\\Entidades.csproj": {
+    "C:\\Users\\mditaranto\\Desktop\\Curso\\Gest. Emp\\Tema10\\Entidades\\Entidades.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\DAM\\Gest.-Empr\\Tema10\\Entidades\\Entidades.csproj",
+        "projectUniqueName": "C:\\Users\\mditaranto\\Desktop\\Curso\\Gest. Emp\\Tema10\\Entidades\\Entidades.csproj",
         "projectName": "Entidades",
-        "projectPath": "E:\\DAM\\Gest.-Empr\\Tema10\\Entidades\\Entidades.csproj",
-        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "E:\\DAM\\Gest.-Empr\\Tema10\\Entidades\\obj\\",
+        "projectPath": "C:\\Users\\mditaranto\\Desktop\\Curso\\Gest. Emp\\Tema10\\Entidades\\Entidades.csproj",
+        "packagesPath": "C:\\Users\\mditaranto\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mditaranto\\Desktop\\Curso\\Gest. Emp\\Tema10\\Entidades\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "E:\\VisualStudio\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mditaranto\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -222,24 +219,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\DAM\\Gest.-Empr\\Tema10\\ListaPersonas\\DAL.csproj": {
+    "C:\\Users\\mditaranto\\Desktop\\Curso\\Gest. Emp\\Tema10\\ListaPersonas\\DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\DAM\\Gest.-Empr\\Tema10\\ListaPersonas\\DAL.csproj",
+        "projectUniqueName": "C:\\Users\\mditaranto\\Desktop\\Curso\\Gest. Emp\\Tema10\\ListaPersonas\\DAL.csproj",
         "projectName": "DAL",
-        "projectPath": "E:\\DAM\\Gest.-Empr\\Tema10\\ListaPersonas\\DAL.csproj",
-        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "E:\\DAM\\Gest.-Empr\\Tema10\\ListaPersonas\\obj\\",
+        "projectPath": "C:\\Users\\mditaranto\\Desktop\\Curso\\Gest. Emp\\Tema10\\ListaPersonas\\DAL.csproj",
+        "packagesPath": "C:\\Users\\mditaranto\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mditaranto\\Desktop\\Curso\\Gest. Emp\\Tema10\\ListaPersonas\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "E:\\VisualStudio\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mditaranto\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -255,8 +252,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "E:\\DAM\\Gest.-Empr\\Tema10\\Entidades\\Entidades.csproj": {
-                "projectPath": "E:\\DAM\\Gest.-Empr\\Tema10\\Entidades\\Entidades.csproj"
+              "C:\\Users\\mditaranto\\Desktop\\Curso\\Gest. Emp\\Tema10\\Entidades\\Entidades.csproj": {
+                "projectPath": "C:\\Users\\mditaranto\\Desktop\\Curso\\Gest. Emp\\Tema10\\Entidades\\Entidades.csproj"
               }
             }
           }
@@ -274,6 +271,10 @@
             "Microsoft.Data.SqlClient": {
               "target": "Package",
               "version": "[5.1.2, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.5, )"
             }
           },
           "imports": [
@@ -292,7 +293,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

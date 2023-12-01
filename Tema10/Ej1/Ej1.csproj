@@ -14,7 +14,6 @@
   <ItemGroup>
     <ProjectReference Include="..\BL\BL.csproj" />
     <ProjectReference Include="..\Entidades\Entidades.csproj" />
-    <ProjectReference Include="..\ListaPersonas\DAL.csproj" />
   </ItemGroup>
 
 </Project>

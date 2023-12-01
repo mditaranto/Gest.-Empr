@@ -49,7 +49,7 @@ namespace Ej1.Controllers
             try
             {
 
-              return View(ListaPersonas.FindByID(id));
+              return View(ListadoPersonasBl.FindByIDBL(id));
             } catch (Exception e)
             {
                 return View("Error");
@@ -77,7 +77,7 @@ namespace Ej1.Controllers
                     return RedirectToAction("Listado");
                 }
 
-                return View(ListaPersonas.FindByID(id));
+                return View(ListadoPersonasBl.FindByIDBL(id));
             } catch (Exception e)
             {
                 return View("Error");
@@ -88,7 +88,7 @@ namespace Ej1.Controllers
         {
             try
             {
-              return View(ListaPersonas.FindByID(id));
+              return View(ListadoPersonasBl.FindByIDBL(id));
             } catch (Exception e)
             {
                 return View("Error");
@@ -100,7 +100,7 @@ namespace Ej1.Controllers
         {
             try
             {
-                EditarPersona.Editar(persona);
+                HandlerPersonaBL.EditarPersonaBL(persona);
                 return RedirectToAction("Listado");
             } catch (Exception e)
             {
@@ -108,6 +108,39 @@ namespace Ej1.Controllers
             }
         }
        
+        public ActionResult Details(int id)
+        {
+            try
+            {
+                return View(ListadoPersonasBl.FindByIDBL(id));
+            } catch (Exception e)
+            {
+                return View("Error");
+            }
+        }
 
+        public ActionResult Create()
+        {
+            try
+            {
+                return View();
+            } catch (Exception e)
+            {
+                return View("Error");
+            }
+        }
+
+        [HttpPost]
+        public ActionResult Create(ClsPersona persona)
+        {
+            try
+            {
+                HandlerPersonaBL.CrearPersonaBL(persona);
+                return RedirectToAction("Listado");
+            } catch (Exception e)
+            {
+                return View("Error");
+            }
+        }
     }
 }

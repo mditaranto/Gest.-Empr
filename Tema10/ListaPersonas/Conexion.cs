@@ -93,6 +93,12 @@ namespace DAL
         }
 
 
+        public string getStringConnection()
+        {
+            return $"server={server};database={dataBase};uid={user};pwd={pass};";
+        }
+
+
     }
 }
 

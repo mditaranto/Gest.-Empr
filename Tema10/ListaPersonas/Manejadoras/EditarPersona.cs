@@ -1,29 +1,34 @@
 ﻿using Entidades;
 using Microsoft.Data.SqlClient;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DAL.Manejadoras
 {
     public static class EditarPersona
     {
-
+        /// <summary>
+        /// Funcion que edita una persona en la base de datos y devuelve el numero de filas afectadas
+        /// </summary>
+        /// <param name="persona"></param>
+        /// <returns>numero de filas afectadas</returns>
         public static int Editar(ClsPersona persona)
         {
             int numeroFilasAfectadas = 0;
 
             SqlCommand miComando = new SqlCommand();
 
+            Conexion conexion = new Conexion();
+
+            SqlConnection miConexion = new SqlConnection();
+
+            miConexion.ConnectionString = conexion.getStringConnection();
+
 
             try
 
             {
 
-                Conexion miConexion = new Conexion();
-                SqlConnection conection = miConexion.getConnection();
+               
+             miConexion.Open();
 
                 miComando.CommandText = "UPDATE Personas " +
                     "SET Nombre = @Nombre, apellidos = @Apellido, Telefono = @Telefono, Direccion = @Direccion, Foto = @Foto, FechaNacimiento = @FechaNacimiento, IDDepartamento = @IdDepartamento " +
@@ -37,7 +42,7 @@ namespace DAL.Manejadoras
                 miComando.Parameters.Add("@Foto", System.Data.SqlDbType.VarChar).Value = persona.Foto;
                 miComando.Parameters.Add("@IdDepartamento", System.Data.SqlDbType.Int).Value = persona.IdDepartamento;
 
-                miComando.Connection = conection;
+                miComando.Connection = miConexion;
                 numeroFilasAfectadas = miComando.ExecuteNonQuery();
 
             }

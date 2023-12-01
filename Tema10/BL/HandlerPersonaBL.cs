@@ -33,6 +33,31 @@ namespace BL
             return numeroFilasAfectadas;
 
         }
+
+        /// <summary>
+        /// Funcion que llama a la DAL y devulve el numero de filas afectadas al crear 
+        /// una persona que recibe por parametro y aplica las normas de negocio
+        /// </summary>
+        /// <param name="persona"></param>
+        /// <returns>El numero de filas afectadas</returns>
+        public static int CrearPersonaBL(ClsPersona persona)
+        {
+           
+            return CrearPersona.Crear(persona);
+
+        }
+
+        /// <summary>
+        /// Funcion que llama a la DAL y devuelve el numero de filas afectadas al editar
+        /// una persona que recibe por parametro y aplica las normas de negocio
+        /// </summary>
+        /// <param name="persona"></param>
+        /// <returns>El numero de filas afectadas</returns>
+        public static int EditarPersonaBL(ClsPersona persona)
+        {
+
+            return EditarPersona.Editar(persona);
+        }
     }
 
 
