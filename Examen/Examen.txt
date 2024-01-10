@@ -1,0 +1,47 @@
+DAL
+		Listados
+			ListadoCoches
+					public static List<clsCoche> ListadoCompletoCoches
+					//Devolvera un listado completo de todos los coches
+			ListaMarcas
+					public static List<clsMarcas> ListadoCompletoMarcas
+					//Devolvera un listado completo de todas las marcas
+
+BL
+		Listados
+			ListadoCochesBl
+					public static List<clsCoche> ListadoCompletoCochesBl
+					//Devolvera un listado completo de todos los coches cumpliendo las normas de negocio
+			listaMarcasBL
+					public static List<clsMarcas> ListadoCompletoMarcasBL
+					//Devolvera un listado completo de todas las marcas cumpliendo las normas de negocio
+
+
+Entidades
+		clsCoche
+				Id
+				IdMarca
+				Nombre
+				Precio
+
+		clsMarca
+				Id
+				Nombre
+
+UI
+		Model
+			ViewModel
+					CocheConMarca
+					//Tendra una clsCoche con un clsMarca
+					ListadoMarcasConListadoCoches
+					//Tendra dos listados, una de marcas y otra de coches por marca, un id y un objeto de marca
+
+		Controllers
+			HomeController
+
+		Views
+			Home
+					SeleccionarCoche
+					//Vista donde se seleccionara el coche
+					EditarPrecio
+					//Vista donde se editara el precio del mismo
