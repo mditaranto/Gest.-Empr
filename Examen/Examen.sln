@@ -3,13 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34221.43
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Examen", "Examen\Examen.csproj", "{F1F3F095-DB24-4A16-B381-D0FA60926A7A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Examen", "Examen\Examen.csproj", "{F1F3F095-DB24-4A16-B381-D0FA60926A7A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{1FAD2A03-306B-46DF-BECF-48D62E1590E3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DAL", "DAL\DAL.csproj", "{1FAD2A03-306B-46DF-BECF-48D62E1590E3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BL", "BL\BL.csproj", "{2FB5FF2D-8890-4D5C-9559-E359451A524A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BL", "BL\BL.csproj", "{2FB5FF2D-8890-4D5C-9559-E359451A524A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entidades", "Entidades\Entidades.csproj", "{52E306F1-E46D-4D20-9E77-2CC22BE5D047}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entidades", "Entidades\Entidades.csproj", "{52E306F1-E46D-4D20-9E77-2CC22BE5D047}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Elementos de la solución", "Elementos de la solución", "{9F6A3D6B-CF8D-4FA6-ABD3-A38B201A56FE}"
+	ProjectSection(SolutionItems) = preProject
+		Examen.txt = Examen.txt
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -64,23 +64,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Usuario\\.nuget\\packages\\": {},
-    "E:\\VisualStudio\\NuGetPackages": {}
+    "C:\\Users\\mditaranto\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\DAM\\Gest.-Empr\\Examen\\Examen\\Examen.csproj",
+      "projectUniqueName": "C:\\Users\\mditaranto\\Desktop\\Curso\\Gest. Emp\\Examen\\Examen\\Examen.csproj",
       "projectName": "Examen",
-      "projectPath": "E:\\DAM\\Gest.-Empr\\Examen\\Examen\\Examen.csproj",
-      "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "E:\\DAM\\Gest.-Empr\\Examen\\Examen\\obj\\",
+      "projectPath": "C:\\Users\\mditaranto\\Desktop\\Curso\\Gest. Emp\\Examen\\Examen\\Examen.csproj",
+      "packagesPath": "C:\\Users\\mditaranto\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\mditaranto\\Desktop\\Curso\\Gest. Emp\\Examen\\Examen\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "E:\\VisualStudio\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\mditaranto\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -96,11 +96,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "E:\\DAM\\Gest.-Empr\\Examen\\BL\\BL.csproj": {
-              "projectPath": "E:\\DAM\\Gest.-Empr\\Examen\\BL\\BL.csproj"
+            "C:\\Users\\mditaranto\\Desktop\\Curso\\Gest. Emp\\Examen\\BL\\BL.csproj": {
+              "projectPath": "C:\\Users\\mditaranto\\Desktop\\Curso\\Gest. Emp\\Examen\\BL\\BL.csproj"
             },
-            "E:\\DAM\\Gest.-Empr\\Examen\\Entidades\\Entidades.csproj": {
-              "projectPath": "E:\\DAM\\Gest.-Empr\\Examen\\Entidades\\Entidades.csproj"
+            "C:\\Users\\mditaranto\\Desktop\\Curso\\Gest. Emp\\Examen\\Entidades\\Entidades.csproj": {
+              "projectPath": "C:\\Users\\mditaranto\\Desktop\\Curso\\Gest. Emp\\Examen\\Entidades\\Entidades.csproj"
             }
           }
         }
@@ -133,7 +133,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

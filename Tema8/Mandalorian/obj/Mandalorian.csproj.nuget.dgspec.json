@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mditaranto\\Desktop\\DAM\\Gest.-Empr\\Tema8\\Mandalorian\\Mandalorian.csproj": {}
+    "C:\\Users\\mditaranto\\Desktop\\Curso\\Gest. Emp\\Tema8\\Mandalorian\\Mandalorian.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mditaranto\\Desktop\\DAM\\Gest.-Empr\\Tema8\\Mandalorian\\Mandalorian.csproj": {
+    "C:\\Users\\mditaranto\\Desktop\\Curso\\Gest. Emp\\Tema8\\Mandalorian\\Mandalorian.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mditaranto\\Desktop\\DAM\\Gest.-Empr\\Tema8\\Mandalorian\\Mandalorian.csproj",
+        "projectUniqueName": "C:\\Users\\mditaranto\\Desktop\\Curso\\Gest. Emp\\Tema8\\Mandalorian\\Mandalorian.csproj",
         "projectName": "Mandalorian",
-        "projectPath": "C:\\Users\\mditaranto\\Desktop\\DAM\\Gest.-Empr\\Tema8\\Mandalorian\\Mandalorian.csproj",
+        "projectPath": "C:\\Users\\mditaranto\\Desktop\\Curso\\Gest. Emp\\Tema8\\Mandalorian\\Mandalorian.csproj",
         "packagesPath": "C:\\Users\\mditaranto\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mditaranto\\Desktop\\DAM\\Gest.-Empr\\Tema8\\Mandalorian\\obj\\",
+        "outputPath": "C:\\Users\\mditaranto\\Desktop\\Curso\\Gest. Emp\\Tema8\\Mandalorian\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

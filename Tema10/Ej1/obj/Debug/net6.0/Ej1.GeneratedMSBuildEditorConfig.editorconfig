@@ -16,18 +16,24 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\mditaranto\Desktop\Curso\Gest. Emp\Tema10\Ej1
 build_property._RazorSourceGeneratorDebug = 
 
+<<<<<<< Updated upstream
 [C:/Users/mditaranto/Desktop/Curso/Gest. Emp/Tema10/Ej1/Views/Home/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+=======
+>>>>>>> Stashed changes
 [C:/Users/mditaranto/Desktop/Curso/Gest. Emp/Tema10/Ej1/Views/Home/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+<<<<<<< Updated upstream
 [C:/Users/mditaranto/Desktop/Curso/Gest. Emp/Tema10/Ej1/Views/Home/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+=======
+>>>>>>> Stashed changes
 [C:/Users/mditaranto/Desktop/Curso/Gest. Emp/Tema10/Ej1/Views/Home/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

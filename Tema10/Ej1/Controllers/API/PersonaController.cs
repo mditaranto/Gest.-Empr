@@ -19,9 +19,9 @@ namespace Ej1.Controllers.API
 
         // GET api/<PersonaController>/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public ClsPersona Get(int id)
         {
-            return "value";
+            return ListadoPersonasBl.FindByIDBL(id);
         }
 
         // POST api/<PersonaController>

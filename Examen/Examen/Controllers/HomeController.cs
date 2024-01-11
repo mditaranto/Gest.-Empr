@@ -1,32 +1,51 @@
-﻿using Examen.Models;
+﻿using Entidades;
+using Examen.Models;
+using Examen.Models.ViewModel;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
 using System.Diagnostics;
 
 namespace Examen.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
+        /// <summary>
+        /// Se introduce el viewModel sin parametros, al seleccionar una marca en la lista devolvera su id
+        /// </summary>
+        /// <returns></returns>
+        public ActionResult SeleccionarCoche()
         {
-            _logger = logger;
+            ListadoMarcasConListadoCoches viewModel = new ListadoMarcasConListadoCoches();
+            return View(viewModel);
         }
 
-        public IActionResult Index()
+        /// <summary>
+        /// Con el id de la marca se buscan los coches de la misma y se muestran, con un action link a otra vista
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        [HttpPost]
+        public ActionResult SeleccionarCoche(ListadoMarcasConListadoCoches id)
         {
-            return View();
+            ListadoMarcasConListadoCoches viewModel = new ListadoMarcasConListadoCoches(id.IdMarca);
+            return View(viewModel);
         }
 
-        public IActionResult Privacy()
+        public ActionResult EditarPrecio(int id) 
         {
-            return View();
+            CocheConMarca viewModel = new CocheConMarca(id);
+            return View(viewModel);
         }
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
+        /// <summary>
+        /// Deberia comprobar si el precio introducido es mayor que el anterior
+        /// </summary>
+        /// <param name="precio"></param>
+        /// <returns></returns>
+        [HttpPost]
+        public ActionResult EditarPrecio(string precio) 
         {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            return View(precio);
         }
     }
 }
