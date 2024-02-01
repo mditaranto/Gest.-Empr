@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="JS.js"></script>
+    <title>Selecci�n de Coches</title>
+    <style>
+        select {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <label for="marca">Selecciona una marca:</label>
+    <select id="marca" onchange="actualizarModelos()">
+        <option value="0">Selecciona una marca</option>
+        <option value="Toyota">Toyota</option>
+        <option value="Honda">Honda</option>
+        <option value="Ford">Ford</option>
+    </select>
+
+    <label for="modelo">Selecciona un modelo:</label>
+    <select id="modelo" disabled>
+        <option value="0">Selecciona un modelo</option>
+    </select>
+    </body>
+</html>

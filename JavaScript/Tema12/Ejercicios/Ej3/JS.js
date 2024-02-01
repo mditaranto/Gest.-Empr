@@ -1,19 +1,30 @@
-class Marcas {
-    constructor(nombre, ListadoCoches) {
-        this.nombre = nombre;
-        this.ListadoCoches = ListadoCoches;
-    }
-    getNombre() {
-        return this.nombre;
-    }
+// Definir modelos por marca
+  const modelosPorMarca = {
+    Toyota: ["Corolla", "Camry", "Rav4"],
+    Honda: ["Civic", "Accord", "CR-V"],
+    Ford: ["Fiesta", "Focus", "Mustang"]
+  };
 
-    get ListadoCoches() {
-        return this.ListadoCoches;
-    }
-}
+  // Función para actualizar la lista de modelos según la marca seleccionada
+  function actualizarModelos() {
+    const marcaSeleccionada = document.getElementById("marca").value;
+    const modelos = modelosPorMarca[marcaSeleccionada];
+    const modeloDropdown = document.getElementById("modelo");
 
-function InicializarMarcas() {
-    BMW = new Marcas("BMW", ["Serie 1", "Serie 2", "Serie 3"]);
-    Audi = new Marcas("Audi", ["A1", "A2", "A3"]);
-    Mercedes = new Marcas("Mercedes", ["Clase A", "Clase B", "Clase C"]);
-}
+    // Limpiar la lista de modelos
+    modeloDropdown.innerHTML = '<option value="0">Selecciona un modelo</option>';
+
+    // Habilitar o deshabilitar el dropdown de modelos según la selección de la marca
+    if (marcaSeleccionada !== "0") {
+      modeloDropdown.disabled = false;
+      // Agregar modelos a la lista de modelos
+      modelos.forEach(function(modelo) {
+        const opcion = document.createElement("option");
+        opcion.text = modelo;
+        opcion.value = modelo;
+        modeloDropdown.add(opcion);
+      });
+    } else {
+      modeloDropdown.disabled = true;
+    }
+  }

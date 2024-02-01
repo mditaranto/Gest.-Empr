@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NLzDuMXBYaNeXXPNvAfz4PXL3RbweDBCQxBiUbFIoIU6lslH1m42TLQcHexRgMBUtQOTrh+GvVW1kUBKkL07jg==",
+  "dgSpecHash": "BgdrT+A12qulZ/UruxkgP6WGf+znSPR0k5/mssjGPltPxpvmLUFIrA6R494w683qHW83gkhN+Q3vVb7MrWEE7w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mditaranto\\Desktop\\DAM\\Gest.-Empr\\Tema10\\Ej1\\Ej1.csproj",
+  "projectFilePath": "C:\\Users\\mditaranto\\Desktop\\Curso\\Gest. Emp\\Tema10\\Ej1\\Ej1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mditaranto\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\mditaranto\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
