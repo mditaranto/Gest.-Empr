@@ -1,8 +1,12 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Tema12"
+    "\\Tema12",
+    "\\Tema12\\Ejercicios",
+    "\\Tema12\\Ejercicios\\Ej2",
+    "\\Tema12\\Ejercicios\\Ej3",
+    "\\Tema12\\Ejercicios\\Ej4"
   ],
-  "SelectedNode": "\\Tema12\\JS.js",
+  "SelectedNode": "\\Tema12\\Ejercicios\\Ej3\\index.html",
   "PreviewInSolutionExplorer": false
 }
