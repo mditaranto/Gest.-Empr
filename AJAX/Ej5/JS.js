@@ -14,39 +14,17 @@ var dept;
     }
 
 
-function pedirPersonas() {
+function pedirDatos() {
 
-    return new Promise((resolve, reject) => {
-
-    var miLlamada = new XMLHttpRequest();
-
-        miLlamada.open("GET", "https://crudjuanmasanchez.azurewebsites.net/api/personas");
-
-    //Definicion estados
-        miLlamada.onreadystatechange = function () {
-
-            if (miLlamada.readyState < 4) {
-
-                //aquí se puede poner una imagen de un reloj o un texto “Cargando”
-
-            } else {
-
-                if (miLlamada.readyState == 4 && miLlamada.status == 200) {
-
-                    personas = JSON.parse(miLlamada.responseText);
-                    resolve();
-
-                } else {
-                    reject();
-                }
-            }
-
-        };
-
-        miLlamada.send();
-    });
-
+    // Solicitud GET (Request).
+    fetch("https://crudjuanmasanchez.azurewebsites.net/api/personas")
+        // Exito
+        .then(fetch(""))
+        .then(response => response.json())  // convertir a json
+        .then(json => console.log(json))    //imprimir los datos en la consola
+        .catch(err => console.log('Solicitud fallida', err)); // Capturar errore
 }
+
 
 function pedirDepartamentos() {
 
