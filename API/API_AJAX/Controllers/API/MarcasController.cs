@@ -1,4 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using DAL;
+using Entidades;
+using Microsoft.AspNetCore.Mvc;
+using System.Threading.Tasks.Dataflow;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -10,34 +13,10 @@ namespace API_AJAX.Controllers.API
     {
         // GET: api/<MarcasController>
         [HttpGet]
-        public IEnumerable<string> Get()
+        public List<clsMarcas> Get()
         {
-            return new string[] { "value1", "value2" };
+            return clsMarcasManejadora.ListadoCompletoMarcas();
         }
 
-        // GET api/<MarcasController>/5
-        [HttpGet("{id}")]
-        public string Get(int id)
-        {
-            return "value";
-        }
-
-        // POST api/<MarcasController>
-        [HttpPost]
-        public void Post([FromBody] string value)
-        {
-        }
-
-        // PUT api/<MarcasController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
-        }
-
-        // DELETE api/<MarcasController>/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
-        }
     }
 }
