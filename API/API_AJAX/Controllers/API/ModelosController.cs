@@ -21,6 +21,7 @@ namespace API_AJAX.Controllers.API
         [HttpPut("{id}")]
         public int Put(int id, [FromBody] clsModelos modelo)
         {
+            modelo.Id = id;
             return clsModelosManejadora.EditarModelo(modelo);
         }
     }

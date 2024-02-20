@@ -1,10 +1,5 @@
 ﻿using Entidades;
 using Microsoft.Data.SqlClient;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DAL
 {
@@ -93,7 +88,7 @@ namespace DAL
 
             clsConexion conexion = new clsConexion();
 
-            SqlConnection miConexion = new SqlConnection();
+            SqlConnection miConexion = new SqlConnection(); 
 
             miConexion.ConnectionString = conexion.getStringConnection();
 
@@ -103,8 +98,8 @@ namespace DAL
                 miConexion.Open();
 
                 miComando.CommandText = "UPDATE modelos " +
-                    "SET nombre = @nombre, idMarca = @idMarca, precio = @precio " +
-                    "WHERE id=@id";
+                    "SET nombre = @Nombre, idMarca = @idMarca, precio = @precio " +
+                    "WHERE id = @id";
                 miComando.Parameters.Add("@id", System.Data.SqlDbType.Int).Value = modelo.Id;
                 miComando.Parameters.Add("@Nombre", System.Data.SqlDbType.VarChar).Value = modelo.Nombre;
                 miComando.Parameters.Add("@idMarca", System.Data.SqlDbType.Int).Value = modelo.IdMarca;

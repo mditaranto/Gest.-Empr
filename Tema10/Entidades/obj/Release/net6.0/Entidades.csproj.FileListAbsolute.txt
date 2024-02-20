@@ -22,3 +22,16 @@ C:\Users\mditaranto\Desktop\DAM\Gest.-Empr\Tema10\Entidades\obj\Release\net6.0\E
 C:\Users\mditaranto\Desktop\DAM\Gest.-Empr\Tema10\Entidades\obj\Release\net6.0\refint\Entidades.dll
 C:\Users\mditaranto\Desktop\DAM\Gest.-Empr\Tema10\Entidades\obj\Release\net6.0\Entidades.pdb
 C:\Users\mditaranto\Desktop\DAM\Gest.-Empr\Tema10\Entidades\obj\Release\net6.0\ref\Entidades.dll
+E:\DAM\Gest.-Empr\Tema10\Entidades\bin\Release\net6.0\Entidades.deps.json
+E:\DAM\Gest.-Empr\Tema10\Entidades\bin\Release\net6.0\Entidades.dll
+E:\DAM\Gest.-Empr\Tema10\Entidades\bin\Release\net6.0\Entidades.pdb
+E:\DAM\Gest.-Empr\Tema10\Entidades\obj\Release\net6.0\Entidades.csproj.AssemblyReference.cache
+E:\DAM\Gest.-Empr\Tema10\Entidades\obj\Release\net6.0\Entidades.GeneratedMSBuildEditorConfig.editorconfig
+E:\DAM\Gest.-Empr\Tema10\Entidades\obj\Release\net6.0\Entidades.AssemblyInfoInputs.cache
+E:\DAM\Gest.-Empr\Tema10\Entidades\obj\Release\net6.0\Entidades.AssemblyInfo.cs
+E:\DAM\Gest.-Empr\Tema10\Entidades\obj\Release\net6.0\Entidades.csproj.CoreCompileInputs.cache
+E:\DAM\Gest.-Empr\Tema10\Entidades\obj\Release\net6.0\Entidades.sourcelink.json
+E:\DAM\Gest.-Empr\Tema10\Entidades\obj\Release\net6.0\Entidades.dll
+E:\DAM\Gest.-Empr\Tema10\Entidades\obj\Release\net6.0\refint\Entidades.dll
+E:\DAM\Gest.-Empr\Tema10\Entidades\obj\Release\net6.0\Entidades.pdb
+E:\DAM\Gest.-Empr\Tema10\Entidades\obj\Release\net6.0\ref\Entidades.dll
