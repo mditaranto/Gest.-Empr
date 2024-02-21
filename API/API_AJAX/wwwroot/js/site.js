@@ -17,8 +17,8 @@ class persona {
 };
 
 class departamento {
-    constructor(idDepartamento, nombre) {
-        this.idDepartamento = idDepartamento;
+    constructor(id, nombre) {
+        this.id = id;
         this.nombre = nombre;
     };
 };
@@ -47,7 +47,7 @@ function pedirPersonas() {
 
         var miLlamada = new XMLHttpRequest();
 
-        miLlamada.open("GET", "https://crudjuanmasanchez.azurewebsites.net/api/personas");
+        miLlamada.open("GET", "https://crudmati.azurewebsites.net/api/persona");
 
         //Definicion estados
         miLlamada.onreadystatechange = function () {
@@ -81,7 +81,7 @@ function pedirDepartamentos() {
 
         var miLlamada = new XMLHttpRequest();
 
-        miLlamada.open("GET", "https://crudjuanmasanchez.azurewebsites.net/api/departamentos");
+        miLlamada.open("GET", "https://crudmati.azurewebsites.net/api/departamentos");
 
         //Definicion estados
         miLlamada.onreadystatechange = function () {
@@ -114,49 +114,51 @@ function rellenarTabla(personas, departamentos) {
     var tabla = document.getElementById("personas");
 
     for (var i = 0; i < personas.length; i++) {
+        if (i == personas[i].id) {
+            var tr = document.createElement("tr");
+            var td = document.createElement("td");
+            td.innerHTML = personas[i].id;
+            tr.appendChild(td);
+            var td = document.createElement("td");
+            td.innerHTML = personas[i].nombre;
+            tr.appendChild(td);
+            var td = document.createElement("td");
+            td.innerHTML = personas[i].apellido;
+            tr.appendChild(td);
+            var td = document.createElement("td");
+            td.innerHTML = personas[i].telefono;
+            tr.appendChild(td);
+            var td = document.createElement("td");
+            td.innerHTML = personas[i].direccion;
+            tr.appendChild(td);
+            var td = document.createElement("td");
+            td.innerHTML = personas[i].foto;
+            tr.appendChild(td);
+            var td = document.createElement("td");
+            td.innerHTML = personas[i].fechaNacimineto;
+            tr.appendChild(td);
+            var td = document.createElement("td");
+            td.innerHTML = departamentos.find(x => x.id == personas[i].idDepartamento).nombre;
+            tr.appendChild(td);
+            var td = document.createElement("td");
+            var boton = document.createElement("button");
+            boton.innerHTML = "Editar";
+            boton.onclick = function () {
+                editarPersona(personas[i].id);
+            };
+            td.appendChild(boton);
+            tr.appendChild(td);
+            var td = document.createElement("td");
+            var boton = document.createElement("button");
+            boton.innerHTML = "Borrar";
+            boton.onclick = function () {
+                borrarPersona(personas[i].id);
+            };
+            td.appendChild(boton);
+            tr.appendChild(td);
 
-        var tr = document.createElement("tr");
-        var td = document.createElement("td");
-        td.innerHTML = personas[i].id;
-        tr.appendChild(td);
-        var td = document.createElement("td");
-        td.innerHTML = personas[i].nombre;
-        tr.appendChild(td);
-        var td = document.createElement("td");
-        td.innerHTML = personas[i].apellido;
-        tr.appendChild(td);
-        var td = document.createElement("td");
-        td.innerHTML = personas[i].telefono;
-        tr.appendChild(td);
-        var td = document.createElement("td");
-        td.innerHTML = personas[i].direccion;
-        tr.appendChild(td);
-        var td = document.createElement("td");
-        td.innerHTML = personas[i].foto;
-        tr.appendChild(td);
-        var td = document.createElement("td");
-        td.innerHTML = personas[i].fechaNacimineto;
-        tr.appendChild(td);
-        var td = document.createElement("td");
-        td.innerHTML = departamentos.find(x => x.idDepartamento == personas[i].idDepartamento).nombre;
-        tr.appendChild(td);
-        var td = document.createElement("td");
-        var boton = document.createElement("button");
-        boton.innerHTML = "Editar";
-        boton.onclick = function () {
-            editarPersona(personas[i].id);
-        };
-        td.appendChild(boton);
-        tr.appendChild(td);
-        var td = document.createElement("td");
-        var boton = document.createElement("button");
-        boton.innerHTML = "Borrar";
-        boton.onclick = function () {
-            borrarPersona(personas[i].id);
-        };
-        td.appendChild(boton);
-        tr.appendChild(td);
-
-        tabla.appendChild(tr);
+            tabla.appendChild(tr);
+        }
+        
     }
 }
