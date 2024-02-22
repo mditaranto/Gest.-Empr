@@ -5,9 +5,15 @@ VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API_AJAX", "API_AJAX\API_AJAX.csproj", "{10605828-F0B6-477A-A10C-CC76D23ECF29}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{B8A65FFF-3B1D-4339-81C4-5BCE4ED23811}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DAL", "DAL\DAL.csproj", "{B8A65FFF-3B1D-4339-81C4-5BCE4ED23811}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entidades", "Entidades\Entidades.csproj", "{8AA7B5D4-6D04-4EBD-87AE-F233F47D916D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entidades", "Entidades\Entidades.csproj", "{8AA7B5D4-6D04-4EBD-87AE-F233F47D916D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ej6", "Ej6", "{A51A743D-267A-4B16-BF9D-AA6A2055FBC4}"
+	ProjectSection(SolutionItems) = preProject
+		index.html = index.html
+		JS.js = JS.js
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

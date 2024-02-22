@@ -26,14 +26,17 @@ namespace Ej1.Controllers.API
 
         // POST api/<PersonaController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public void Post([FromBody] ClsPersona persona)
         {
+            HandlerPersonaBL.CrearPersonaBL(persona);
         }
 
         // PUT api/<PersonaController>/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public void Put(int id, [FromBody] ClsPersona persona)
         {
+            persona.Id = id;
+            HandlerPersonaBL.EditarPersonaBL(persona);
         }
 
         // DELETE api/<PersonaController>/5

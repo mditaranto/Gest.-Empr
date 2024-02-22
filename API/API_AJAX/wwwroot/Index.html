@@ -4,10 +4,12 @@
     <meta charset="utf-8" />
     <title></title>
     <script src="js/site.js"></script>
+    <link href="css/site.css" rel="stylesheet"/>
 </head>
 <body>
 
     <table id="personas">
+        <button id="btnInsertar" value="Añadir Persona" onclick="addPersona()">Añadir Persona</button>
         <tr>
             <th>Id</th>
             <th>Nombre</th>
@@ -17,8 +19,30 @@
             <th>foto</th>
             <th>fechaNac</th>
             <th>departamento</th>
+            <th>Acciones</th>
         </tr>
     </table>
+
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            
+            <form id="formPersonas">
+                <input type="hidden" id="id" name="id" />
+                <input type="hidden" id="idDepartamento" name="idDepartamento"/>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre" />
+                <input type="text" id="apellido" name="apellido" placeholder="Apellido" />
+                <input type="text" id="telefono" name="telefono" placeholder="Telefono" />
+                <input type="text" id="direccion" name="direccion" placeholder="Direccion" />
+                <input type="text" id="foto" name="foto" placeholder="Foto" />
+                <input type="date" id="fechaNac" name="fechaNac" placeholder="FechaNac" />
+                <input type="text" id="departamento" name="departamento" placeholder="Departamento" />
+                <input type="button" id="btnGuardar" value="Guardar" onclick="sendData()" />
+            </form>
+        </div>
+
+    </div>
 
 </body>
 </html>
