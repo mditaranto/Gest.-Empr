@@ -80,5 +80,113 @@ namespace DAL
 
             return listadoDEpt;
         }
+
+        public static int crearDept(ClsDepartamentos dept)
+        {
+            int numeroFilasAfectadas = 0;
+
+            SqlCommand miComando = new SqlCommand();
+
+            Conexion conexion = new Conexion();
+
+            SqlConnection miConexion = new SqlConnection();
+
+            miConexion.ConnectionString = conexion.getStringConnection();
+
+
+            try
+            {
+                miConexion.Open();
+
+                miComando.CommandText = "INSERT INTO Departamentos (Nombre) " +
+                    "VALUES (@Nombre)";
+                miComando.Parameters.Add("@Nombre", System.Data.SqlDbType.VarChar).Value = dept.Nombre;
+
+                miComando.Connection = miConexion;
+                numeroFilasAfectadas = miComando.ExecuteNonQuery();
+
+            }
+
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+            return numeroFilasAfectadas;
+        }
+
+        public static int BorrarDept(int id)
+        {
+            int numeroFilasAfectadas = 0;
+
+            SqlCommand miComando = new SqlCommand();
+
+            miComando.Parameters.Add("@id", System.Data.SqlDbType.Int).Value = id;
+
+            try
+
+            {
+
+                Conexion miConexion = new Conexion();
+                SqlConnection conection = miConexion.getConnection();
+
+                miComando.CommandText = "DELETE FROM Departamentos WHERE ID=@id";
+
+                miComando.Connection = conection;
+                numeroFilasAfectadas = miComando.ExecuteNonQuery();
+
+            }
+
+            catch (Exception ex)
+
+            {
+
+                throw ex;
+
+            }
+
+            return numeroFilasAfectadas;
+        }
+
+        public static int EditarDept(ClsDepartamentos dept)
+        {
+            int numeroFilasAfectadas = 0;
+
+            SqlCommand miComando = new SqlCommand();
+
+            Conexion conexion = new Conexion();
+
+            SqlConnection miConexion = new SqlConnection();
+
+            miConexion.ConnectionString = conexion.getStringConnection();
+
+            try
+
+            {
+
+
+                miConexion.Open();
+
+                miComando.CommandText = "UPDATE Departamentos " +
+                    "SET Nombre = @Nombre " +
+                    "WHERE ID=@id";
+                miComando.Parameters.Add("@id", System.Data.SqlDbType.Int).Value = dept.Id;
+                miComando.Parameters.Add("@Nombre", System.Data.SqlDbType.VarChar).Value = dept.Nombre;
+
+                miComando.Connection = miConexion;
+                numeroFilasAfectadas = miComando.ExecuteNonQuery();
+
+            }
+
+            catch (Exception ex)
+
+            {
+
+                throw ex;
+
+            }
+
+            return numeroFilasAfectadas;
+        }
     }
 }

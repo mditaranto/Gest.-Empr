@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="site.js"></script>
+    <link href="site.css" rel="stylesheet"/>
+</head>
+<body>
+    <select name="Lista" id="Lista" onchange="cambiarTabla()">
+        <option value="personas">personas</option>
+        <option value="departamentos">departamentos</option>
+    </select>
+
+    <table id="personas">
+        <button id="btnInsertar" value="Añadir Persona" onclick="addPersona()">Añadir Persona</button>
+        <tr>
+            <th>Id</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Telefono</th>
+            <th>Direccion</th>
+            <th>foto</th>
+            <th>fecha Nacimiento</th>
+            <th>departamento</th>
+            <th>Acciones</th>
+        </tr>
+    </table>
+
+    <table id="departamentos">
+        <button id="btnInsertarDepartamento" value="Añadir Departamento" onclick="addDepartamento()">Añadir Departamento</button>
+        <tr>
+            <th>Id</th>
+            <th>Nombre</th>
+            <th>Acciones</th>
+        </tr>
+    </table>
+
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            
+            <form id="formPersonas">
+                <input type="hidden" id="id" name="id" />
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre" />
+                <input type="text" id="apellido" name="apellido" placeholder="Apellido" />
+                <input type="text" id="telefono" name="telefono" placeholder="Telefono" />
+                <input type="text" id="direccion" name="direccion" placeholder="Direccion" />
+                <input type="text" id="foto" name="foto" placeholder="Foto" />
+                <input type="date" id="fechaNac" name="fechaNac" placeholder="FechaNac" />
+                <select id="departamentoSelect" name="departamentoSelect">
+                    
+                </select>
+                <input type="button" id="btnGuardar" value="Guardar" onclick="sendData()" />
+            </form>
+        </div>
+
+    </div>
+
+    <div id="myModalDepartamento" class="modal">
+<!-- Modal content -->
+            <div class="modal-content">
+                
+                <form id="formDepartamento">
+                    <input type="hidden" id="idDept" name="idDept" />
+                    <input type="text" id="nombreDepartamento" name="nombreDepartamento" placeholder="Nombre Departamento" />
+                    <input type="button" id="btnGuardarDepartamento" value="Guardar" onclick="addDepartamento()" />
+                </form>
+            </div>
+    </div>
+
+</body>
+</html>

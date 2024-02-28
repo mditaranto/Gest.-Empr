@@ -1,0 +1,235 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+    table th, table td {
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+
+    table th {
+        background-color: #f2f2f2;
+        color: #333;
+    }
+
+    table tbody tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    table tbody tr:hover {
+        background-color: #ddd;
+    }
+
+    table img {
+        max-width: 100px;
+        height: auto;
+    }
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe; /* Fondo blanco */
+    margin: 15% auto; /* Centrar verticalmente */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Ancho del contenido del modal */
+    max-width: 500px; /* Ancho máximo del contenido del modal */
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+/* Estilos para los inputs */
+.modal-content input[type="text"],
+.modal-content input[type="date"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+}
+
+/* Estilos para el botón de guardar */
+#btnGuardar, #btnGuardarDepartamento {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+    #btnGuardar:hover {
+        background-color: #45a049;
+    }
+
+#btnGuardarDepartamento {
+    background-color: #45a049;
+}
+
+    /* Estilos generales de la tabla */
+    #personas, #departamentos {
+        font-family: Arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    #personas th, #personas td, #departamentos th, #departamentos td {
+        border: 1px solid #dddddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+    #personas th, #departamentos th {
+        background-color: #f2f2f2;
+    }
+
+/* Estilos para el botón de añadir persona */
+#btnInsertar, #btnInsertarDepartamento {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition-duration: 0.4s;
+    border: 1px solid transparent; /* Agregamos un borde transparente para mejorar la visibilidad */
+}
+
+    #btnInsertar:hover {
+        background-color: #45a049;
+    }
+
+    #btnInsertarDepartamento{
+    background-color: #45a049;
+    }
+    /* Añadimos color al texto */
+    #btnInsertar {
+        color: white;
+    }
+
+#btnInsertarDepartamento{
+color: white;
+
+}
+/* Estilos para las filas pares */
+#personas tr:nth-child(even), #departamentos tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Estilos para el botón de editar y borrar */
+.acciones button {
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition-duration: 0.4s;
+}
+
+    .acciones button:hover {
+        background-color: #005f7f;
+    }
+
+
+/* Estilos para los selects */
+select {
+    padding: 8px 12px; /* Ajusta el relleno para una apariencia más uniforme */
+    border: 1px solid #ccc; /* Agrega un borde alrededor del select */
+    border-radius: 4px; /* Añade esquinas redondeadas */
+    font-size: 14px; /* Tamaño del texto */
+    margin-bottom: 10px; /* Espacio entre los elementos */
+    width: 100%; /* Ancho completo */
+    box-sizing: border-box; /* Incluye el relleno y el borde en el ancho total */
+}
+
+/* Ajustes específicos para el select de departamentos en el modal */
+#departamentoSelect {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 100%;
+    margin-top: 10px; /* Ajusta el margen superior para el modal */
+    box-sizing: border-box;
+}
+
+/* Ajusta el ancho del select de las listas */
+#Lista {
+    width: auto; /* Ancho automático para que se ajuste al contenido */
+    padding: 8px 12px; /* Ajusta el relleno para una apariencia más uniforme */
+    border: 1px solid #ccc; /* Agrega un borde alrededor del select */
+    border-radius: 4px; /* Añade esquinas redondeadas */
+    font-size: 14px; /* Tamaño del texto */
+    margin-bottom: 10px; /* Espacio entre los elementos */
+    box-sizing: border-box; /* Incluye el relleno y el borde en el ancho total */
+}
+

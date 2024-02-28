@@ -107,7 +107,7 @@ table {
 }
 
 /* Estilos para el botón de guardar */
-#btnGuardar {
+#btnGuardar, #btnGuardarDepartamento {
     background-color: #4CAF50;
     color: white;
     padding: 14px 20px;
@@ -122,25 +122,29 @@ table {
         background-color: #45a049;
     }
 
-/* Estilos generales de la tabla */
-#personas {
-    font-family: Arial, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
+#btnGuardarDepartamento {
+    background-color: #45a049;
 }
 
-    #personas th, #personas td {
+    /* Estilos generales de la tabla */
+    #personas, #departamentos {
+        font-family: Arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    #personas th, #personas td, #departamentos th, #departamentos td {
         border: 1px solid #dddddd;
         padding: 8px;
         text-align: left;
     }
 
-    #personas th {
+    #personas th, #departamentos th {
         background-color: #f2f2f2;
     }
 
 /* Estilos para el botón de añadir persona */
-#btnInsertar {
+#btnInsertar, #btnInsertarDepartamento {
     background-color: #4CAF50;
     border: none;
     color: white;
@@ -159,13 +163,20 @@ table {
         background-color: #45a049;
     }
 
-/* Añadimos color al texto */
-#btnInsertar {
-    color: white;
-}
+    #btnInsertarDepartamento{
+    background-color: #45a049;
+    }
+    /* Añadimos color al texto */
+    #btnInsertar {
+        color: white;
+    }
 
+#btnInsertarDepartamento{
+color: white;
+
+}
 /* Estilos para las filas pares */
-#personas tr:nth-child(even) {
+#personas tr:nth-child(even), #departamentos tr:nth-child(even) {
     background-color: #f2f2f2;
 }
 
@@ -187,3 +198,26 @@ table {
     .acciones button:hover {
         background-color: #005f7f;
     }
+
+
+/* Estilos para los selects */
+select {
+    padding: 8px 12px; /* Ajusta el relleno para una apariencia más uniforme */
+    border: 1px solid #ccc; /* Agrega un borde alrededor del select */
+    border-radius: 4px; /* Añade esquinas redondeadas */
+    font-size: 14px; /* Tamaño del texto */
+    margin-bottom: 10px; /* Espacio entre los elementos */
+    width: 100%; /* Ancho completo */
+    box-sizing: border-box; /* Incluye el relleno y el borde en el ancho total */
+}
+
+/* Ajustes específicos para el select de departamentos en el modal */
+#departamentoSelect {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 100%;
+    margin-top: 10px; /* Ajusta el margen superior para el modal */
+    box-sizing: border-box;
+}
